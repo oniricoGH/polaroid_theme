@@ -11,13 +11,11 @@
         <link href="<?php bloginfo('url');?>/wp-content/themes/booty/style.css" rel="stylesheet">
     </head>    
     
+    <body <?php body_class(); ?>>
+
     <header>
-        <div class="container">
-            <div class="page-header">
-                <h1><a href="<?php echo home_url(); ?>"> <?php bloginfo('name'); ?></a>
-                <small><?php bloginfo('description'); ?></small></h1>
-            </div>
+        <div class="page-header">
+            <h1><a href="<?php echo home_url(); ?>"> <?php bloginfo('name'); ?></a><br />
+            <small><?php bloginfo('description'); ?></small></h1>
         </div>
     </header>
-        
-    <body <?php body_class(); ?>>

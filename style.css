@@ -4,3 +4,48 @@ Author: Adrian Campa
 Author URI: https://chocolatewebdesign.com
 Version: 1.0
 */
+
+p {
+    line-height: 1.65;
+}
+
+header {
+    background-color: cornflowerblue;
+}
+
+.panel-footer {
+    margin-top: 20px;
+}
+
+.panel-footer p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+body {
+    margin-top: -20px;
+}
+
+div.page-header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-header {
+    margin-top: 0px;
+}
+.page-header h1 {
+    color: white;
+    padding-top: 10px;
+}
+
+.page-header h1 small {
+    color: white;
+}
+
+.page-header h1 a {
+    color: white;
+}
