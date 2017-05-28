@@ -10,7 +10,7 @@ p {
 }
 
 header {
-    background-color: cornflowerblue;
+    background-color: burlywood;
 }
 
 .panel-footer {
@@ -21,7 +21,7 @@ header {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10px;
+    padding-top: 8px;
 }
 
 body {
@@ -43,9 +43,86 @@ div.page-header {
 }
 
 .page-header h1 small {
-    color: white;
+    color: saddlebrown;
 }
 
 .page-header h1 a {
-    color: white;
+    color: saddlebrown;
 }
+
+.index-post h2 {
+    font-family: Noteworthy, sans-serif;
+    font-size: 1.2em;
+}
+
+.index-post h2 a {
+    color: black;
+    text-decoration: none;
+}
+
+.index-post {
+    display: block;
+}
+
+.single-post h2 a:hover {
+    text-decoration: underline;
+}
+
+.container .row {
+    margin-top: 20px;
+}
+
+/* Image features */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-thumbnail{
+    position: absolute;
+    top: 33px;
+    left: 53px;
+}
+
+.img-photo-polaroid {
+    position: relative;
+}
+
+.label-photo-polaroid {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    max-width: 190px;
+}
+
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {
+
+    ... 
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+
+    ... 
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+
+    ... 
+
+}
+
+
+
+
+
