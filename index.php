@@ -5,7 +5,7 @@
     if (have_posts()) :  
 
 ?> 
-    <div class="container-fluid" id="index-main-container">
+    <div class="container-fluid index-container-fluid">
         <div class="row">
 <?php
         while(have_posts()) : 
@@ -13,7 +13,7 @@
             the_post();
 ?>
             <div class="col-md-3 col-sm-4 col-xs-6">
-                <article class="index-post">
+                <div class="index-post">
                     <div class="img-photo-polaroid">
                         <img alt="polaroid blank photo " src="<?php bloginfo('url');?>/wp-content/themes/booty/images/photo_polaroid_204x253.png">
                     </div>
@@ -22,8 +22,8 @@
                             <?php the_post_thumbnail('small-thumbnail'); ?>
                         </div>
                     </a>
-                    <h2 class="label-photo-polaroid"><a href="<?php the_permalink(); ?>"> <?php the_title()?> </a></h2>
-                </article>
+                    <h2 class="label-photo-polaroid"><a href="<?php the_permalink(); ?>"> <?php the_title()?> </a><br /><p><?php the_time('j F, Y'); ?></p></h2>
+                </div>
             </div>
 <?php
     endwhile;

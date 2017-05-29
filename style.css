@@ -5,14 +5,115 @@ Author URI: https://chocolatewebdesign.com
 Version: 1.0
 */
 
+/* General */
 p {
     line-height: 1.65;
 }
 
-header {
-    background-color: black;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
+
+/* Header */
+div.page-header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: darkgrey;
+    -webkit-transition: background-color 1.25s linear; /* For Safari 3.1 to 6.0 */
+    transition: background-color 1.25s ease-in-out;
+}
+
+div.page-header:hover {
+    background-color: yellow;
+}
+
+div.page-header h1 {
+    padding-top: 22px;
+    font-family: Bradley Hand, sans-serif;
+    font-size: 4.5em;
+}
+
+div.page-header h1 small {
+    color: black;
+    font-size: 60%;
+}
+
+div.page-header h1 a {
+    color: black;
+    font-size: 85%;
+}
+
+/* Body */
+body {
+    margin-top: -20px;
+}
+
+.container .row {
+    margin-top: 0px;
+}
+
+/* Index page */
+.index-container-fluid {
+    background-color: black;
+    padding-bottom: 20px;
+}
+
+/* index-post contains the polaroid photo with polaroid template, photo, title and date */
+div.index-post {
+    margin-top: 20px;
+}
+
+div.index-post h2 {
+    font-family: Bradley Hand, sans-serif;
+    font-size: 1.4em;
+    position: absolute;
+    top: 185px;
+    left: 50px;
+    max-width: 190px;
+}
+
+div.index-post h2 a {
+    color: black;
+    text-decoration: none;
+}
+
+div.index-post h2 a:hover {
+    text-decoration: underline;
+}
+
+div.index-post h2 p {
+    font-size: 70%;
+}
+
+/* Polaroid photo white template */
+div.img-photo-polaroid {
+    position: relative;
+    top: 0px;
+    left: 28px;
+}
+
+/* Post featured photo */
+div.img-highlight-index {
+    position: absolute;
+    top: 28px;
+    left: 53px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: grayscale 1.25s; /* For Safari 3.1 to 6.0 */
+    transition: grayscale 1.25s;
+}
+
+div.img-highlight-index:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+/* Footer */
 .panel-footer {
     margin-top: 40px;
 }
@@ -24,105 +125,7 @@ header {
     padding-top: 8px;
 }
 
-body {
-    margin-top: -20px;
-}
 
-div.page-header {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.page-header {
-    margin-top: 0px;
-}
-.page-header h1 {
-    padding-top: 42px;
-}
-
-.page-header h1 small {
-    color: black;
-    font-size: 60%;
-}
-
-.page-header h1 a {
-    color: black;
-    font-size: 85%;
-}
-
-.index-post h2 {
-    font-family: Bradley Hand, sans-serif;
-    font-size: 1.3em;
-}
-
-.index-post h2 a {
-    color: black;
-    text-decoration: none;
-}
-
-.index-post {
-    margin-top: 20px;
-}
-
-.single-post h2 a:hover {
-    text-decoration: underline;
-}
-
-.container .row {
-    margin-top: 0px;
-}
-
-/* Image features */
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.img-highlight-index {
-    position: absolute;
-    top: 28px;
-    left: 53px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transition: grayscale 2s; /* For Safari 3.1 to 6.0 */
-    transition: grayscale 2s;
-}
-
-.img-highlight-index:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
-
-.img-photo-polaroid {
-    position: relative;
-    top: 0px;
-    left: 28px;
-}
-
-.label-photo-polaroid {
-    position: absolute;
-    top: 200px;
-    left: 50px;
-    max-width: 190px;
-}
-
-#index-main-container {
-    background-image:url('images/index_background.jpg');
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:100% 100%;
-    padding-bottom: 20px;
-}
-
-#blog-header {
-    background-image:url('images/header_background.png');
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:100% 100%;
-    padding-bottom: 40px;
-}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
