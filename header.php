@@ -14,8 +14,8 @@
     <body <?php body_class(); ?>>
 
     <header>
-        <div class="page-header">
-            <h1><a href="<?php echo home_url(); ?>"> <?php bloginfo('name'); ?></a><br />
+        <div class="page-header" id="blog-header">
+            <h1><a href="<?php echo home_url(); ?>"> <?php bloginfo('name'); ?></a>
             <small><?php bloginfo('description'); ?></small></h1>
         </div>
     </header>

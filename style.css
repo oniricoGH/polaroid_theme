@@ -10,11 +10,11 @@ p {
 }
 
 header {
-    background-color: burlywood;
+    background-color: black;
 }
 
 .panel-footer {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .panel-footer p {
@@ -38,21 +38,22 @@ div.page-header {
     margin-top: 0px;
 }
 .page-header h1 {
-    color: white;
-    padding-top: 10px;
+    padding-top: 42px;
 }
 
 .page-header h1 small {
-    color: saddlebrown;
+    color: black;
+    font-size: 60%;
 }
 
 .page-header h1 a {
-    color: saddlebrown;
+    color: black;
+    font-size: 85%;
 }
 
 .index-post h2 {
-    font-family: Noteworthy, sans-serif;
-    font-size: 1.2em;
+    font-family: Bradley Hand, sans-serif;
+    font-size: 1.3em;
 }
 
 .index-post h2 a {
@@ -61,7 +62,7 @@ div.page-header {
 }
 
 .index-post {
-    display: block;
+    margin-top: 20px;
 }
 
 .single-post h2 a:hover {
@@ -69,7 +70,7 @@ div.page-header {
 }
 
 .container .row {
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 /* Image features */
@@ -79,14 +80,25 @@ img {
     height: auto;
 }
 
-.post-thumbnail{
+.img-highlight-index {
     position: absolute;
-    top: 33px;
+    top: 28px;
     left: 53px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: grayscale 2s; /* For Safari 3.1 to 6.0 */
+    transition: grayscale 2s;
+}
+
+.img-highlight-index:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
 .img-photo-polaroid {
     position: relative;
+    top: 0px;
+    left: 28px;
 }
 
 .label-photo-polaroid {
@@ -96,7 +108,21 @@ img {
     max-width: 190px;
 }
 
+#index-main-container {
+    background-image:url('images/index_background.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:100% 100%;
+    padding-bottom: 20px;
+}
 
+#blog-header {
+    background-image:url('images/header_background.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:100% 100%;
+    padding-bottom: 40px;
+}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */

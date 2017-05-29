@@ -5,21 +5,23 @@
     if (have_posts()) :  
 
 ?> 
-    <div class="container">
+    <div class="container-fluid" id="index-main-container">
         <div class="row">
 <?php
         while(have_posts()) : 
         
             the_post();
 ?>
-            <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="col-md-3 col-sm-4 col-xs-6">
                 <article class="index-post">
                     <div class="img-photo-polaroid">
-                        <img src="<?php bloginfo('url');?>/wp-content/themes/booty/images/photo_polaroid.png">
+                        <img alt="polaroid blank photo " src="<?php bloginfo('url');?>/wp-content/themes/booty/images/photo_polaroid_204x253.png">
                     </div>
-                    <div class="post-thumbnail">
-                        <?php the_post_thumbnail('small-thumbnail'); ?>
-                    </div>
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="img-highlight-index">
+                            <?php the_post_thumbnail('small-thumbnail'); ?>
+                        </div>
+                    </a>
                     <h2 class="label-photo-polaroid"><a href="<?php the_permalink(); ?>"> <?php the_title()?> </a></h2>
                 </article>
             </div>
