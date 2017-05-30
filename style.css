@@ -1,5 +1,5 @@
 /*
-Theme Name: Booty
+Theme Name: Polaroide
 Author: Adrian Campa
 Author URI: https://chocolatewebdesign.com
 Version: 1.0
@@ -25,7 +25,7 @@ div.page-header {
     margin-bottom: 0px;
     background-color: darkgrey;
     -webkit-transition: background-color 1.25s linear; /* For Safari 3.1 to 6.0 */
-    transition: background-color 1.25s ease-in-out;
+    transition: background-color 1.25s;
 }
 
 div.page-header:hover {
@@ -35,7 +35,7 @@ div.page-header:hover {
 div.page-header h1 {
     padding-top: 22px;
     font-family: Bradley Hand, sans-serif;
-    font-size: 4.5em;
+    font-size: 2.5em; /* Phones */
 }
 
 div.page-header h1 small {
@@ -53,10 +53,6 @@ body {
     margin-top: -20px;
 }
 
-.container .row {
-    margin-top: 0px;
-}
-
 /* Index page */
 .index-container-fluid {
     background-color: black;
@@ -65,57 +61,72 @@ body {
 
 /* index-post contains the polaroid photo with polaroid template, photo, title and date */
 div.index-post {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
-div.index-post h2 {
+div.index-photo-date p {
+    font-size: 1.2em;
+    color: white;
     font-family: Bradley Hand, sans-serif;
-    font-size: 1.4em;
+    margin-bottom: 0px;
+    padding: 1px;
+}
+
+div.index-photo-date {
     position: absolute;
-    top: 185px;
-    left: 50px;
-    max-width: 190px;
-}
-
-div.index-post h2 a {
-    color: black;
-    text-decoration: none;
-}
-
-div.index-post h2 a:hover {
-    text-decoration: underline;
-}
-
-div.index-post h2 p {
-    font-size: 70%;
+    top: 65px;
+    left: 31px;
+    z-index: 2;
+    background-color: black;
 }
 
 /* Polaroid photo white template */
 div.img-photo-polaroid {
     position: relative;
     top: 0px;
-    left: 28px;
+    left: 0px;
 }
 
 /* Post featured photo */
-div.img-highlight-index {
+div.img-featured-index {
     position: absolute;
-    top: 28px;
-    left: 53px;
+    top: 67px;
+    left: 12px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     -webkit-transition: grayscale 1.25s; /* For Safari 3.1 to 6.0 */
     transition: grayscale 1.25s;
+    margin: 0px 30px 0px 17.5px;
 }
 
-div.img-highlight-index:hover {
+div.img-featured-index:hover {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
 }
 
+h2.label-photo-polaroid {
+    font-family: Bradley Hand, sans-serif;
+    font-size: 1.4em;
+    position: absolute;
+    top: 80%;
+    left: 7%;
+    max-width: 260px;
+}
+
+h2.label-photo-polaroid a {
+    color: black;
+    text-decoration: none;
+}
+
+h2.label-photo-polaroid a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 .panel-footer {
-    margin-top: 40px;
+    margin-top: 0px;
+    -webkit-transition: background-color 1.25s linear; /* For Safari 3.1 to 6.0 */
+    transition: background-color 1.25s;
 }
 
 .panel-footer p {
@@ -125,31 +136,108 @@ div.img-highlight-index:hover {
     padding-top: 8px;
 }
 
+.panel-footer:hover {
+    background-color: yellow;
+}
 
+/* Media queries */
 
-/* Extra small devices (phones, less than 768px) */
+/* Important!: Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {
+@media (min-width: 768px) {
 
-    ... 
-
+    div.page-header h1 {
+        font-size: 3em;
+    }
+    
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {
+@media (min-width: 992px) {
 
-    ... 
-
+    div.page-header h1 {
+        font-size: 4em;
+    }
+  
 }
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {
+@media (min-width: 1200px) {
 
-    ... 
+    div.page-header h1 {
+        font-size: 5em;
+    }
+    
+}
+
+/* XXsmall devices (phones)*/
+@media (max-width: 512px) {
+
+    .index-post {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
+
+
+
+/** XXsmall devices grid definition */
+/* One element per column */
+.visible-xxs {
+  display:none !important;
+}
+
+.col-xxs-12 {
+    position:relative;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px;
+    float:left;
+}
+
+
+@media (max-width : 512px) {
+
+    .visible-xxs {
+        display: block !important;
+    }
+    .visible-xs {
+        display:none !important;
+    }
+
+    .hidden-xs {
+        display:block !important;
+    }
+
+    .hidden-xxs {
+        display:none !important;
+    }    
+
+    .col-xxs-12 {
+        width:100%;
+    }
+
+    .col-xxs-pull-12 {
+        right: 100%;
+    }
+
+     .col-xxs-push-12 {
+        left: 100%;
+    }
+
+    .col-xxs-offset-12 {
+        margin-left: 100%;
+    }
+
+    h2.label-photo-polaroid {
+        font-size: 1.2em;
+    }
+    
+}
+
 
 
 

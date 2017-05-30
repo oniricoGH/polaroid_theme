@@ -7,8 +7,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title> <?php bloginfo('name'); ?></title>
         <?php wp_head(); ?>
-        <link href="<?php bloginfo('url');?>/wp-content/themes/booty/css/bootstrap.min.css" rel="stylesheet">
-        <link href="<?php bloginfo('url');?>/wp-content/themes/booty/style.css" rel="stylesheet">
+        <link href="<?php bloginfo('url');?>/wp-content/themes/polaroide/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php bloginfo('url');?>/wp-content/themes/polaroide/style.css" rel="stylesheet">
     </head>    
     
     <body <?php body_class(); ?>>
