@@ -23,19 +23,14 @@ div.page-header {
     margin-right: auto;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: darkgrey;
-    -webkit-transition: background-color 1.25s linear; /* For Safari 3.1 to 6.0 */
-    transition: background-color 1.25s;
-}
-
-div.page-header:hover {
-    background-color: yellow;
+    background-color: white;
+    border-bottom: 0px;
 }
 
 div.page-header h1 {
     padding-top: 22px;
-    font-family: Bradley Hand, sans-serif;
-    font-size: 2.5em; /* Phones */
+    font-family: Tahoma, sans-serif;
+    font-size: 3em; /* Phones */
 }
 
 div.page-header h1 small {
@@ -48,6 +43,53 @@ div.page-header h1 a {
     font-size: 85%;
 }
 
+/* Navigation Bar */
+nav.navbar {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+ul.nav li:hover {
+    background-color: black;
+}
+
+ul.nav li a {
+    font-family: Tahoma, sans-serif;
+    font-size: 1.5em;
+    color: black;    
+}
+
+ul.nav li a:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
+/* Center the elements */
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+/* Toggle to the left and color */
+.navbar-toggle {
+    float: left;
+    margin-left: 15px;
+    border-color: black;
+}
+.navbar-toggle:hover {
+    background-color: transparent;
+}
+span.icon-bar {
+    background-color: black;
+}
+
+
 /* Body */
 body {
     margin-top: -20px;
@@ -55,9 +97,23 @@ body {
 
 /* Index page */
 .index-container-fluid {
-    background-color: black;
+    /*background-color: black;*/
+    background-color: white;
     padding-bottom: 20px;
 }
+
+/*
+
+- Example showing how to set a background image
+
+#index-main-container {
+    background-image:url('images/table_background.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:100% 100%;
+    padding-bottom: 20px;
+}
+*/
 
 /* index-post contains the polaroid photo with polaroid template, photo, title and date */
 div.index-post {
@@ -91,24 +147,22 @@ div.img-photo-polaroid {
 div.img-featured-index {
     position: absolute;
     top: 67px;
-    left: 12px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transition: grayscale 1.25s; /* For Safari 3.1 to 6.0 */
-    transition: grayscale 1.25s;
+    left: 13px;
+    -webkit-transition: saturate 1.25s; /* For Safari 3.1 to 6.0 */
+    transition: saturate 1.25s;
     margin: 0px 30px 0px 17.5px;
 }
 
 div.img-featured-index:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
+    -webkit-filter: saturate(150%);
+    filter: saturate(150%);
 }
 
 h2.label-photo-polaroid {
     font-family: Bradley Hand, sans-serif;
     font-size: 1.4em;
     position: absolute;
-    top: 80%;
+    top: 81%;
     left: 7%;
     max-width: 260px;
 }

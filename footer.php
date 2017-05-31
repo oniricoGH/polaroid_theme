@@ -1,5 +1,5 @@
     <footer class="panel-footer">
-        <p><?php bloginfo('name'); ?> - &copy; <?php echo date('Y'); ?></p>
+        <p><?php echo get_theme_mod('setting_footer_text_html', 'No copyright information');?> &copy; <?php echo date('Y'); ?></p>
     </footer>
     <?php wp_footer();?>
     <!-- comento esto porque estoy en local <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->

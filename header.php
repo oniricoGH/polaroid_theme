@@ -14,7 +14,8 @@
     <body <?php body_class(); ?>>
 
     <header>
-        <div class="page-header" id="blog-header">
+        <div class="page-header" style="background-color: <?php 
+                    echo get_theme_mod( 'setting_header_background_color', '#ffffff' ); ?>;">
             <h1><a href="<?php echo home_url(); ?>"> <?php bloginfo('name'); ?></a>
             <small><?php bloginfo('description'); ?></small></h1>
         </div>
